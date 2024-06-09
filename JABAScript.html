@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задания по ЖабаСкрипт</title>
+</head>
+
+<body>
+
+    <h1> Задание 1</h1>
+
+    <button onclick="name_and_number()"> Кнопочка 1 </button>
+    <script type="text/javascript">
+        function name_and_number() {
+
+            var yourName = prompt("Введите своё имя")
+            alert(yourName.length)
+        }
+    </script>
+
+
+    <h1> Задание 2</h1>
+
+    <button onclick="sum_number()"> Кнопочка 2 </button>
+    <script type="text/javascript">
+        function sum_number() {
+
+            var num1 = 3, num2 = 5, sum = num1 + num2
+            alert(sum)
+        }
+    </script>
+
+
+    <h1> Задание 3</h1>
+
+    <button onclick="dividing_numbers()"> Кнопочка 3 </button>
+    <script type="text/javascript">
+        function dividing_numbers() {
+
+            var num1 = 16, num2 = 2, del = num1 / num2
+            confirm(del)
+        }
+    </script>
+
+
+    <h1> Задание 4</h1>
+
+    <button onclick="Age()"> Кнопочка 4 </button>
+    <script type="text/javascript">
+        function Age() {
+
+            var age = Number(prompt('Введите свой возраст'))
+            alert("Полученный результат посмотрите в посмотреть код элемента -> console")
+            console.log(age)
+        }
+    </script>
+
+
+    <h1> Задание 5</h1>
+
+    <button onclick="lenght_word()"> Кнопочка 5 </button>
+    <script type="text/javascript">
+        function lenght_word() {
+
+            var str = prompt('Введите любое слово')
+            console.log(str.substring(0, 2))
+
+        }
+    </script>
+
+
+    <h1> Задание 6</h1>
+
+    <button onclick="who_older()"> Кнопочка 6 </button>
+    <script type="text/javascript">
+        function who_older() {
+
+            var name1 = prompt('Введите имя мамы')
+            var age1 = Number(prompt('Возраст мамы'))
+            var name2 = prompt('Введите имя папы')
+            var age2 = Number(prompt('Возраст папы'))
+            if (age1 < age2)
+                alert("Папа старше", name2)
+            else alert("Мама старше", name1)
+        }
+    </script>
+
+
+    <h1> Задание 7</h1>
+
+    <button onclick="age_for_concert()"> Кнопочка 7 </button>
+    <script type="text/javascript">
+        function age_for_concert() {
+
+            var age = Number(prompt('Введите возраст ребёнка(если обманешь, то прокляну)'))
+            if (age > 12)
+                alert('Вперёд за билетами')
+            else alert('Сиди дома')
+
+        }
+    </script>
+
+
+    <h1> Задание 8</h1>
+
+    <button onclick="pow_number()"> Кнопочка 8 </button>
+    <script type="text/javascript">
+        function pow_number() {
+
+            var num = Number(prompt('Введите число, которое хотите возвести в квадрат'))
+            alert(Math.pow(num, 2))
+        }
+    </script>
+
+
+    <h1> Задание 9</h1>
+    <button onclick="Hello()"> Кнопочка 9</button>
+    <script type="text/javascript">
+        function Hello() {
+
+            var name = prompt('Введите имя и скрипт поприветствует вас')
+            alert("Доброго здоровечка, "+name+"")
+        }
+    </script>
+
+    <h1> Задание 10</h1>
+    <button onclick="quotient_of_division()"> Кнопочка 10 </button>
+    <script type="text/javascript">
+        function quotient_of_division() {
+
+            var num = prompt('Введите число')
+            if (num % 4 == 0)
+                alert("Ура победа, выражение истинно")
+            else
+                alert("Параша, выражение ложно")
+
+        }
+    </script>
+
+    <h1> Задание 11</h1>
+    <button onclick="Solve_perimeter()"> Кнопочка 11 </button>
+    <script type="text/javascript">
+        function Solve_perimeter() {
+            var a = Number(prompt('Введите число a'))
+            var b = Number(prompt('Введите число b'))
+            alert(perimeter(a, b))
+        }
+
+        function perimeter(a, b) {
+            return (a + b) * 2
+        }
+    </script>
+
+    <h1> Задание 12</h1>
+    <button onclick="For_1_10()"> Кнопочка 12 </button>
+    <script type="text/javascript">
+        function For_1_10() {
+
+            for (var i = 1; i <= 10; i++) {
+                console.log(i)
+            }
+
+        }
+    </script>
+
+    <h1> Задание 13</h1>
+    <button onclick="For_5_50_5()"> Кнопочка 13 </button>
+    <script type="text/javascript">
+        function For_5_50_5() {
+
+            for (var i = 5; i <= 50; i += 5) {
+                console.log(i)
+            }
+
+        }
+    </script>
+
+
+    <h1> Задание 14</h1>
+    <button onclick="While_1_10()"> Кнопочка 14 </button>
+    <script type="text/javascript">
+        function While_1_10() {
+            var i = 1;
+            while (i <= 10) {
+                console.log(i)
+                i++;
+            }
+
+        }
+    </script>
+
+
+    <h1> Задание 15</h1>
+    <button onclick="While_5_50_5()"> Кнопочка 15 </button>
+    <script type="text/javascript">
+        function While_5_50_5() {
+            var i = 5;
+            while (i <= 50) {
+                console.log(i)
+                i += 5;
+            }
+
+        }
+
+    </script>
+
+
+    <h1> Задание 16</h1>
+    <button onclick="a()"> Кнопочка 16 </button>
+    <script type="text/javascript">
+        function a() {
+
+            for (var i = 5; i >= -4; i--) {
+                if (i < 1)
+                    alert('Нас не задушишь, не убьёшь')
+            }
+
+        }
+    </script>
+
+
+    <h1> Задание 17</h1>
+    <button onclick="menu()"> Кнопочка 17</button>
+    <script type="text/javascript">
+        function menu() {
+
+            var name = prompt("Что ты выберешь, щенок: яблоко(хороший выбор), апельсин(тоже неплохо), сок(имба), пиво(для подпивасников в танках)")
+
+            switch (name) {
+                case 'яблоко': alert('Ваш выбор' + name + '  просто идеален!')
+                case 'апельсин': alert('Ваш выбор' + name + '  просто идеален!')
+                case 'сок': alert('Ваш выбор' + name + '  просто идеален!')
+                case 'пиво': alert('Ваш выбор' + name + '  просто идеален!')
+                default: alert('Пошёл прочь!')
+            }
+        }
+    </script>
+
+
+    <h1> Задание 18</h1>
+    <button onclick="literal()"> Кнопочка 18</button>
+    <script type="text/javascript">
+        function literal() {
+
+            var a = ["Ч", "У", "М", "Б", "А"]
+            alert(a[2])
+
+        }
+    </script>
+
+
+    <h1> Задание 19</h1>
+    <button onclick="dlina()"> Кнопочка 19</button>
+    <script type="text/javascript">
+        function dlina() {
+
+            var a = ["Ч", "У", "М", "Б", "А"]
+            alert(a.length)
+
+        }
+    </script>
+
+
+    <h1> Задание 20</h1>
+    <button onclick="znachenia()"> Кнопочка 20</button>
+    <script type="text/javascript">
+        function znachenia() {
+
+            var a = ["Ч", "У", "М", "Б", "А"]
+            alert(a)
+
+        }
+    </script>
+
+    <h1> Задание 21</h1>
+    <button onclick="mas()"> Кнопочка 21</button>
+    <script type="text/javascript">
+        function mas() {
+
+            var arr = new Array()
+            arr = ["Ч", "М", ["О", "О", "О"], "Н", "Я"]
+            alert(arr)
+        }
+    </script>
+
+    <h1> Задание 22</h1>
+    <button onclick="knigga()"> Кнопочка 22</button>
+    <script type="text/javascript">
+        function knigga() {
+
+            var tel = {
+                name: "Караева Диана Тимуровна ",
+                num:  89640396974
+            };
+            alert(tel.name + tel.num)
+        }
+    </script>
+
+    <h1> Задание 23</h1>
+    <button onclick="obj()"> Кнопочка 23</button>
+    <script type="text/javascript">
+        function obj() {
+
+            var Gale = new Object()
+            Gale.strenght = 8
+            Gale.dexterity = 13
+            Gale.Endurance = 15
+            Gale.Intelligence = 17
+            Gale.Wisdom = 10
+            Gale.Charisma = 12
+            console.log("свойства: ")
+            for (var property in Gale) {
+                console.log(property);
+            }
+        }
+    </script>
+
+    <h1> Задание 24</h1>
+    <button onclick="svoistva()"> Кнопочка 24</button>
+    <script type="text/javascript">
+        function svoistva() {
+
+            var Gale = new Object()
+            Gale.strenght = 8
+            Gale.dexterity = 13
+            Gale.Endurance = 15
+            Gale.Intelligence = 17
+            Gale.Wisdom = 10
+            Gale.Charisma = 12
+            console.log("свойства: ")
+            for (var property in Gale) {
+                console.log(Gale[property]);
+            }
+        }
+    </script>
+</body>
+
+</html>
